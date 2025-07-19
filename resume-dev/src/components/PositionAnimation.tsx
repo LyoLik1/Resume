@@ -26,8 +26,8 @@ const PositionAnimation: React.FC = () => {
       animate="visible"
     >
       <Image
-        src="/full-stack_dev_ai_engineer.svg" 
-        alt="Full Stack Developer AI Engineer"
+        src="/front-end-dev.svg" 
+        alt="Front End Developer "
         width={600} 
         height={77}  
         className={styles.positionSvg}
