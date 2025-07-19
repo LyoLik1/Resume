@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styles from './PositionAnimation.module.css';
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 const PositionAnimation: React.FC = () => {
   const svgVariants = {
@@ -12,7 +12,7 @@ const PositionAnimation: React.FC = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1.6, 
+        duration: 1.6,
         ease: "easeOut"
       }
     }
@@ -26,10 +26,10 @@ const PositionAnimation: React.FC = () => {
       animate="visible"
     >
       <Image
-        src="/front-end-dev.svg" 
+        src="/front-end-dev.svg"
         alt="Front End Developer "
-        width={600} 
-        height={77}  
+        width={600}
+        height={77}
         className={styles.positionSvg}
       />
     </motion.div>

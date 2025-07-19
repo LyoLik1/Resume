@@ -13,7 +13,7 @@
 }
 
 [data-theme='light'] .projectCard,
-.projectCardLink {
+[data-theme='light'] .projectCardLink {
   background-color: #00000080;
 
 }
@@ -79,7 +79,7 @@
 .viewProjectLink {
   font-family: var(--font-body);
   font-size: 0.9rem;
-  color: var(--color-accent-secondary-on-dark, #39ff14);
+  color: var(--color-accent-primary-on-dark, #00BFFF);
   text-decoration: none;
   align-self: flex-start;
   margin-top: auto; 
@@ -138,7 +138,7 @@
 
 
 .hasBackgroundImage .viewProjectLink {
-  color: var(--color-accent-secondary-on-dark, #39FF14); 
+  color: var(--color-accent-primary-on-dark, #00BFFF);
 }
 .hasBackgroundImage .viewProjectLink:hover {
   color: var(--color-text-on-dark-bg, #FFFFFF);
