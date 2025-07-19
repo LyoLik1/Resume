@@ -36,4 +36,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-resume-ai-dev/node_modules/
+resume-dev/node_modules/
