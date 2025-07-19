@@ -1,0 +1,75 @@
+.aboutSection {
+  padding: 60px 20px;
+  background-color: transparent;
+  color: var(--color-text-primary);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr; 
+    gap: 60px;
+    align-items: flex-start; 
+  }
+}
+
+.title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-text-accent);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: left;
+}
+
+.aboutParagraph {
+  font-family: var(--font-body);
+  font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.highlight {
+  color: var(--color-accent-primary);
+  font-weight: 500;
+}
+
+.subtitle {
+  font-family: var(--font-headings);
+  font-size: clamp(1.3rem, 4vw, 1.8rem);
+  color: var(--color-accent-primary);
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.focusList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.focusListItem {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  line-height: 1.6;
+  margin-bottom: 12px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.focusListItem::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--color-accent-secondary);
+  font-size: 1.1em;
+}

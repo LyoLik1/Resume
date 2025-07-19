@@ -1,0 +1,85 @@
+.techStackSection {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(3px);
+  color: var(--color-text-primary);
+}
+
+[data-theme='light'] .techStackSection {
+    background-color: var(--glass-bg-section);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+[data-theme='light'] .categoryCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-text-accent); 
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.categoriesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categoryCard {
+  background-color: var(--color-background-card); 
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-primary); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(211, 211, 211, 0.1); 
+}
+
+.categoryTitle {
+  font-family: var(--font-headings);
+  font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  color: var(--color-accent-primary); 
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-accent-secondary-transparent); 
+}
+
+.techList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.techListItem {
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  background-color: var(--color-background-primary); 
+  color: var(--color-text-primary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.techListItem:hover {
+  background-color: var(--color-accent-primary); 
+  color: var(--color-background-primary);
+  border-color: var(--color-accent-primary);
+}

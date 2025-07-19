@@ -1,0 +1,139 @@
+.educationSection {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(3px);
+  color: var(--color-text-primary);
+}
+
+[data-theme='light'] .educationSection {
+    background-color: var(--glass-bg-section);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+[data-theme='light'] .educationItem {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-text-accent);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.educationGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.educationItem {
+  background-color: var(--color-background-card);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border-primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.educationItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+}
+
+.institution {
+  font-family: var(--font-headings);
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  color: var(--color-accent-primary);
+  margin-bottom: 8px;
+}
+
+.degree, .faculty, .specialty {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  color: var(--color-text-primary);
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.dates {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+  color: var(--color-text-secondary);
+  margin-bottom: 15px;
+}
+
+.coursesTitle {
+  font-family: var(--font-headings);
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  color: var(--color-accent-secondary);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.coursesList {
+  list-style: none;
+  padding-left: 0;
+  font-family: var(--font-body);
+  font-size: clamp(0.85rem, 2.1vw, 0.95rem);
+}
+
+.coursesList li {
+  margin-bottom: 6px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.coursesList li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent-secondary);
+  font-size: 1em;
+  top: 0px;
+}
+
+@media (max-width: 768px) {
+  .educationSection {
+    padding: 40px 15px;
+  }
+  .title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+    margin-bottom: 30px;
+  }
+  .educationGrid {
+    gap: 20px;
+  }
+}
+.certificateLink {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.certificateLink .degree {
+    color: var(--color-text-primary);
+    transition: color 0.3s ease;
+}
+
+.certificateLink:hover .degree {
+    color: var(--color-accent-primary);
+    text-decoration: underline;
+}
+
+[data-theme='light'] .certificateLink .degree {
+    color: var(--color-text-primary);
+}
+
+[data-theme='light'] .certificateLink:hover .degree {
+    color: var(--color-accent-primary);
+}

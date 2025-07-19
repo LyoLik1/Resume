@@ -36,5 +36,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Old project folder - if you move files out of it
-resume-ai-dev/
+resume-ai-dev/node_modules/

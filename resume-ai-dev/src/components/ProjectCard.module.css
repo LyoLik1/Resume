@@ -1,0 +1,173 @@
+.projectCard,
+.projectCardLink {
+  background-color: var(--color-background-card);
+  padding: 1.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-border-subtle);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+[data-theme='light'] .projectCard,
+.projectCardLink {
+  background-color: #00000080;
+
+}
+
+.projectCard:hover,
+.projectCardLink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+
+.projectImage {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover; 
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: var(--color-border-subtle); 
+}
+
+.projectTitle {
+  font-family: var(--font-headings); 
+  font-size: 1.4rem; 
+   color: var(--color-accent-primary-on-dark, #00BFFF);
+  margin-bottom: 0.75rem;
+}
+
+.projectDescription {
+  font-family: var(--font-body); 
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1; 
+  color: var(--color-text-main); 
+}
+
+[data-theme='light'] .projectDescription {
+  color: var(--color-text-on-dark-bg, #fff);
+}
+
+.technologies {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: var(--color-background-primary); 
+  color: var(--color-text-primary); 
+  border: 1px solid var(--color-accent-secondary); 
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem; 
+  font-family: var(--font-body);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.techTag:hover {
+  background-color: var(--color-accent-secondary);
+  color: var(--color-background-primary);
+}
+
+.viewProjectLink {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-accent-secondary-on-dark, #39ff14);
+  text-decoration: none;
+  align-self: flex-start;
+  margin-top: auto; 
+  transition: color 0.3s ease;
+}
+
+.viewProjectLink:hover {
+  color: var(--color-text-headings);
+}
+
+.projectExternalLinkButton {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 1px solid var(--color-accent-primary); 
+  color: var(--color-accent-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: auto; 
+  align-self: flex-start;
+}
+
+.projectExternalLinkButton:hover {
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg-card); 
+}
+
+.hasBackgroundImage {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: var(--color-text-on-dark-bg, #FFFFFF);
+}
+
+.hasBackgroundImage .projectTitle {
+  color: var(--color-text-on-dark-bg-accent, #00BFFF); 
+}
+
+.hasBackgroundImage .projectDescription {
+   color: var(--color-text-on-dark-bg, #FFFFFF);
+}
+
+.hasBackgroundImage .techTag {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #FFFFFF;
+}
+.hasBackgroundImage .techTag:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #FFFFFF;
+  color: #000000;
+}
+
+
+.hasBackgroundImage .viewProjectLink {
+  color: var(--color-accent-secondary-on-dark, #39FF14); 
+}
+.hasBackgroundImage .viewProjectLink:hover {
+  color: var(--color-text-on-dark-bg, #FFFFFF);
+}
+
+.hasBackgroundImage .projectExternalLinkButton {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--color-accent-primary-on-dark, #00BFFF);
+  color: var(--color-accent-primary-on-dark, #00BFFF);
+}
+
+.hasBackgroundImage .projectExternalLinkButton:hover {
+  background-color: var(--color-accent-primary-on-dark, #00BFFF);
+  color: var(--color-bg-card);
+}
+
+
+.cardOverlay {
+  position: relative; 
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem; 
+  border-radius: 4px; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:not(.hasBackgroundImage) .cardOverlay,
+.projectCardLink:not(.hasBackgroundImage) .cardOverlay {
+  background-color: transparent;
+}

@@ -1,0 +1,151 @@
+.contactSection {
+  padding: 60px 20px;
+  text-align: center;
+
+}
+
+[data-theme='light'] .contactSection {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  backdrop-filter: blur(3px);
+background-color: var(--glass-bg-section);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-text-accent);
+  margin-bottom: 40px;
+}
+
+.contactsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactItem {
+  text-decoration: none;
+  color: inherit;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.4s ease-out,
+    background-color 0.4s ease-out;
+  
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  will-change: transform, box-shadow, background-color;
+}
+
+.contactItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+
+.contactItem:hover {
+  box-shadow:
+    0 0 15px 5px rgba(var(--glow-color-rgb, 255, 255, 255), 0.3),
+    0 0 30px 10px rgba(var(--glow-color-rgb, 255, 255, 255), 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px) saturate(200%) hue-rotate(var(--hue-rotate-value, 0deg));
+  -webkit-backdrop-filter: blur(12px) saturate(200%) hue-rotate(var(--hue-rotate-value, 0deg));
+}
+
+[data-theme='light'] .contactItem {
+  background-color: var(--glass-bg-contact);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border-contact);
+}
+
+[data-theme='light'] .contactItem:hover {
+  border-color: var(--color-accent-primary);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+}
+
+[data-theme='light'] .iconWrapper,
+[data-theme='light'] .contactType,
+[data-theme='light'] .contactValue {
+  color: var(--color-text-accent);
+}
+
+[data-theme='light'] .contactValue {
+    color: var(--color-text-primary);
+}
+
+[data-theme='light'] .contactItem:hover .iconWrapper,
+[data-theme='light'] .contactItem:hover .contactType,
+[data-theme='light'] .contactItem:hover .contactValue {
+    color: var(--hover-color, var(--color-accent-primary));
+}
+
+.iconWrapper {
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  transition: color 0.3s ease-out;
+  font-size: 1.5rem;
+}
+
+.contactItem:hover .iconWrapper, .contactItem:hover .contactValue {
+  color: var(--hover-color, #FFFFFF);
+}
+
+
+.contactType {
+  font-family: var(--font-headings);
+  font-size: 1.1rem;
+  color: var(--color-text-accent);
+  margin-bottom: 5px;
+}
+
+.contactValue {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  word-break: break-all;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.contactValue:hover {
+  color: var(--color-accent-primary);
+  text-decoration: underline;
+}
+
+.copyNotification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-accent-secondary);
+  color: var(--color-background-primary);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  z-index: 10000;
+}

@@ -1,0 +1,26 @@
+.nameAnimationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto; 
+  padding: 20px; 
+}
+
+.nameSvg {
+  width: auto; 
+  height: auto;
+  transform: scale(0.5); 
+  margin: 0 auto;
+  display: block; 
+  max-width: 90vw; 
+}
+
+.nameSvg path {
+  stroke: var(--color-accent-primary); 
+  stroke-width: 0.5; 
+  fill: var(--color-text-primary); 
+  fill-opacity: 0; 
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1; 
+}
