@@ -13,28 +13,34 @@
 
 ## About Me (Intro)
 
-I am a **Front-End developer** with over 2 years of experience, specializing in creating **high-performance** and **scalable** web applications using **React** and **TypeScript**. My focus is on **high performance**, **FSD architecture**, **API integrations**, and the **practical application of WebSockets** to create interactive interfaces. I am constantly developing in the field of **AI automation** and **LLM integrations**, actively learning **German**, and am open to **relocation** or **remote work**.
+I am a **Front-End Developer** with **2.5+ years of experience** building **high-performance**, **scalable**, and **user-focused** web applications.My expertise lies in **React** and **TypeScript**, with a strong background in **Feature-Sliced Design (FSD) architecture**, **API integrations**, and the practical use of **WebSockets** to create **real-time**, **interactive interfaces**.
+
+I have hands-on experience working in **remote**, **international teams**, where I delivered production-ready solutions such as **real-time chat systems**, **referral and payment integrations**, and **interactive dashboards with charts and analytics** and more.
+
+Beyond front-end development, I am actively exploring **AI automation** and **LLM integrations**, aiming to bring innovative solutions into production-ready environments.
+
 
 ## Tech Stack
 
 - **Languages**: JavaScript (ES6+), TypeScript, HTML5, CSS3,SCSS, SASS,TailwindCSS
-- **Frameworks and Libraries**: React, Zustand, Redux, React Hook Form, React Query, GSAP, Swiper, Three.js, Framer Motion, Babylon.js
-- **UI and Styling**: Material UI, Emotion, BEM, Feature-Sliced Design (FSD), Atomic Design
-- **Tools and Build**: Vite, Webpack, Docker, Git, Netlify, i18n, Jest, React Email
+- **Frameworks and Libraries**: React, Zustand, Redux, React Hook Form, Yup, React Query, GSAP, Swiper,Recharts, Three.js, Framer Motion, Babylon.js
+- **UI and Styling**: Material UI, UI/UX, Emotion, BEM, Responsive Design, Feature-Sliced Design (FSD), Atomic Design, Accessibility
+- **Tools and Build**: Vite, Webpack, Docker, Git, Netlify, i18n, Jest, React Email, Stripe
 - **Additional**: API integrations, SEO, performance optimization, WebSockets, QR Scanner
 
 ## Work History
 
 ### Front-End Developer — Surroundly
 *Remote, Germany | October 2023 – Present*
-- Development and optimization of the UI for a video chat using **React**, **TypeScript**, **Zustand**, **WebSockets**
+- Development and optimization of the UI for a chat using **React**, **TypeScript**, **Zustand**, **WebSockets**
 - Integration of a **QR scanner**, **charts (Recharts)**, and **React Hook Form**
 - Application of **FSD architecture**, state management, and **SEO** optimization
 
-### Front-End Developer — News+Letter
-*Remote, Germany | March 2024 – August 2024*
-- Development of platform functionality for personalized news delivery
-- Creation of email templates using **React Email** and implementation of **animations** with **GSAP**
+### Front-End Developer — Healthelic
+*Remote, Germany | August 2025 – Present*
+- Built a referral system with **Stripe integration** for payments and automated payouts.
+- Developed an **analytics dashboard** with **interactive charts**, statistics, and performance tracking.
+- Applied **FSD architecture**, **Zustand** for state management, **SCSS modules** for scalable UI design, and **Framer Motion** for smooth animations.
 
 ### Front-End Developer — Viand Solar
 *Remote, Germany | March 2024 – June 2024*
@@ -45,6 +51,7 @@ I am a **Front-End developer** with over 2 years of experience, specializing in 
 
 -   **surroundly.io**: https://surroundly.io/ (screenshot: /screens/surroundly.png)
 -   **viand-solar.de**: https://viand-solar.de/ (screenshot: /screens/viand-solar.png)
+-   **affiliate.healthelic.com**:https://affiliate.healthelic.com/ (screenshot: /screens/healthelic.png)
 -   **News-Letter**: https://github.com/LyoLik1/News-Letter
 
 ## Education
