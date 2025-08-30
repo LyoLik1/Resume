@@ -22,10 +22,10 @@ Beyond front-end development, I am actively exploring **AI automation** and **LL
 
 ## Tech Stack
 
-- **Languages**: JavaScript (ES6+), TypeScript, HTML5, CSS3,SCSS, SASS,TailwindCSS
-- **Frameworks and Libraries**: React, Zustand, Redux, React Hook Form, Yup, React Query, GSAP, Swiper,Recharts, Three.js, Framer Motion, Babylon.js
+- **Languages**: JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS/SASS, TailwindCSS
+- **Frameworks and Libraries**: React, Next.js, Zustand, Redux, React Hook Form, Yup, React Query, GSAP, Swiper,Recharts, Three.js, Framer Motion, Babylon.js
 - **UI and Styling**: Material UI, UI/UX, Emotion, BEM, Responsive Design, Feature-Sliced Design (FSD), Atomic Design, Accessibility
-- **Tools and Build**: Vite, Webpack, Docker, Git, Netlify, i18n, Jest, React Email, Stripe
+- **Tools and Build**: Vite, Webpack, Docker, Git, Netlify,Vercel, i18n, Jest, React Email, Stripe
 - **Additional**: API integrations, SEO, performance optimization, WebSockets, QR Scanner
 
 ## Work History

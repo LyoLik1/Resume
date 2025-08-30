@@ -14,8 +14,28 @@ import { BabylonScene } from '@/components/NeuralNetworkAnimation';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 
 export const metadata: Metadata = {
-  title: 'Resume AI Dev',
-  description: 'AI Developer Resume',
+  title: "Oleksii Nieznakomov | Front-End Developer Resume",
+  description:
+    "Interactive resume and portfolio of Oleksii Nieznakomov, Front-End Developer skilled in React, TypeScript, Next.js, Zustand, and modern UI/UX design.",
+  keywords: [
+    "Front-End Developer",
+    "React Developer",
+    "Next.js",
+    "TypeScript",
+    "Resume",
+    "Portfolio",
+    "Oleksii Nieznakomov",
+    "UI/UX",
+  ],
+  authors: [{ name: "Oleksii Nieznakomov" }],
+  openGraph: {
+    title: "Oleksii Nieznakomov | Front-End Developer Resume",
+    description:
+      "Explore the portfolio and resume of Oleksii Nieznakomov, Front-End Developer with expertise in React, TypeScript, Next.js, and modern UI/UX.",
+    url: "https://resume-dev-nine.vercel.app",
+    siteName: "Resume AI Dev",
+    type: "website",
+  },
 };
 
 export default function HomePage() {
