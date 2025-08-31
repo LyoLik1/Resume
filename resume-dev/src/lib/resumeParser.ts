@@ -112,8 +112,8 @@ export const parseResume = (): ResumeData => {
             const value = line.match(/\((.*?)\)/)?.[1] || '';
             resumeData.contacts.push({ type: 'GitHub', value, href: value });
         } else if (line.includes('Telegram:')) {
-            const value = stripMarkdown(line.split(':')[1].trim());
-            resumeData.contacts.push({ type: 'Telegram', value, href: `https://${value}` });
+            const value = line.match(/\((.*?)\)/)?.[1] || '';
+            resumeData.contacts.push({ type: 'Telegram', value, href: value });
         }
         break;
       case 'About Me (Intro)':

@@ -9,7 +9,7 @@
 -   **Phone:** +38 (095) 040-77-45
 -   **LinkedIn:** https://www.linkedin.com/in/oleksii-nieznakomov-135b9a2a4/
 -   **GitHub:** (https://github.com/LyoLik1)
--   **Telegram:** t.me/Lyo_Likk
+-   **Telegram:** (https://t.me/Lyo_Likk)
 
 ## About Me (Intro)
 
